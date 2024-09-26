@@ -25,7 +25,7 @@
 
                         </div>
                         <div class="divider d-flex align-items-center my-4">
-                            <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                            <p class="text-center fw-bold mx-3 mb-0"> </p>
                         </div>
                         <div class="form-outline mb-4">
                             <label class="form-label" for="login">Username</label>

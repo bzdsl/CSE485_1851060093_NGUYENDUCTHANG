@@ -6,12 +6,11 @@ if (!isset($_SESSION['login'])) {
 }
 ?>
 
-
 <!doctype html>
 <html lang="en">
 
 <head>
-  <title>ADMIN quản lý</title>
+  <title>Manager</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -55,8 +54,8 @@ if (!isset($_SESSION['login'])) {
             <td scope="row"><?php echo $row['age'] ?></td>
 
             <td>
-            <td><a href="sua.php?id=<?php echo $row['id']; ?>">Sửa</a></td>
-            <td><a href="xoa.php?id=<?php echo $row['id']; ?>">Xóa</a></td>
+            <td><a href="update.php?id=<?php echo $row['id']; ?>">Update</a></td>
+            <td><a href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
             </td>
 
           </tr>
@@ -64,7 +63,6 @@ if (!isset($_SESSION['login'])) {
       <?php
       } ?>
     </table>
-    <center><a class="" href="them.php">Thêm tài khoản</a></center>
   </div>
 
   <!-- Optional JavaScript -->

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 09, 2022 lúc 04:58 AM
--- Phiên bản máy phục vụ: 10.4.18-MariaDB
--- Phiên bản PHP: 8.0.5
+-- Host: 127.0.0.1
+-- Generation Time: Jan 17, 2022 at 05:10 PM
+-- Server version: 10.4.16-MariaDB
+-- PHP Version: 7.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `flickr`
+-- Database: `flickr`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
@@ -34,7 +34,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `images`
+-- Table structure for table `images`
 --
 
 CREATE TABLE `images` (
@@ -54,21 +54,26 @@ CREATE TABLE `images` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Đang đổ dữ liệu cho bảng `images`
+-- Dumping data for table `images`
 --
 
 INSERT INTO `images` (`id`, `image_url`, `title`, `idkhach`) VALUES
-(17, 'abc.61d411b3270586.41852661.png', 'abc', 28),
-(18, 'kaka.61d4123c37e516.53490950.png', 'kaka', 28),
-(19, 'hehehe.61d41243c0ad93.43371312.png', 'hehehe', 28),
-(20, '85WPM.61d7fbddc9ccc8.40718373.png', '85WPM', 22),
-(21, 'jisoo.61d7fbfb53bc49.71544494.jpg', 'jisoo', 23,
-(22, 'av.61d7fc23a56808.86608576.jpg', 'av', 25);
+(57, 'cat 1.61e58ad14ca466.25741196.png', 'cat 1', 26),
+(58, 'cat 2.61e58ae05481f5.25118796.png', 'cat 2', 26),
+(59, 'cat 3.61e58ae81739f0.18703036.jpg', 'cat 3', 26),
+(60, '11.61e58b688bd194.93014839.jpg', '11', 26),
+(61, '222.61e58b72815ad8.52510534.png', '222', 26),
+(62, '333.61e58b7ba70bd4.08037933.jpg', '333', 26),
+(63, '444.61e58b889bbbc9.20281906.png', '444', 26),
+(64, 'cây.61e58e2438db16.12116811.jpg', 'cây', 26),
+(65, 'home.61e58e2bd91c60.60789521.jpg', 'home', 26),
+(67, 'jisoo.61e58e601d7247.41809479.jpg', 'jisoo', 29),
+(68, 'jisoo 2.61e58e73128500.69197264.jpg', 'jisoo 2', 29);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tbl_user`
+-- Table structure for table `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -81,63 +86,60 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `tbl_user`
+-- Dumping data for table `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`id`, `fname`, `lname`, `age`, `email`, `pwd`) VALUES
-(20, 'thang', 'nguyen', 22, 'thang@gmail.com', 'anhday088'),
-(21, 'Thang', 'nhu', 23, 'emai@gmail.com', 'adnhy'),
-(22, 'thang', 'nguyen', 22, 'thang@outlook', '123'),
 (23, 'thang', 'anh', 22, 'email@outlook', '$2y$10$/HmmQ3RLn/bq1SECGQREqO5CdDR2bvP1acoybC054IFJMXYiQQ1Iq'),
 (24, 'thang', 'nguyen', 12, 'thanghai012@yahoo', '$2y$10$XzwDswyDMjYfWlHUCmJ4SuZOPWyzWjqc6dCQVqWl0VY/q4Jb4x07a'),
 (25, 'ádf', 'ádf', 22, '123@yahoo', '$2y$10$sw/2V5Tdbwy3xOCsOXqlT.xTb97ZY3Xnkqv0WKwjuuNR6s38edISi'),
-(26, 'thang', 'nguyen', 29, 'abc@abc.com', '$2y$10$Cbqkh1jBDqY.cVs5LyZ6IeoVYA047VS2vUHbbY5a/R1P18muwrl0m'),
-(27, 'Duc Thang', 'Nguyen', 20, 'vietnam@thang', 'abc'),
-(28, 'TRAN', 'DUAT', 21, 'tduat183@gmail.com', '$2y$10$H6tXyz5ESRU9nu0hBmAW.e0FRC0iF5iFjSzb9LNMGg4hZM.M51RJu');
+(26, 'Duc Thang', 'Nguyen', 22, 'abc@abc.com', '$2y$10$Cbqkh1jBDqY.cVs5LyZ6IeoVYA047VS2vUHbbY5a/R1P18muwrl0m'),
+(28, 'abc', 'cde', 33, 'admin@gmail', '$2y$10$CFRV3DK7/TOgvkvv5u4Tw.GkT0i4hIzw74wF.esGF0j83kV2hiXYG'),
+(29, 'Tran', 'Thang', 32, 'abcd@abcd', '$2y$10$9KtVER3oZ.JY/Qjoz8V7FuL.VXfOWsvfi7hP/yX93catLFpaHUbi2');
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `images`
+-- Indexes for table `images`
 --
 ALTER TABLE `images`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `tbl_user`
+-- Indexes for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `admin`
+-- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT cho bảng `images`
+-- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
--- AUTO_INCREMENT cho bảng `tbl_user`
+-- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

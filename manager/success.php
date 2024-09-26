@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<!--<meta http-equiv="refresh" content="200;url=index1.php?id=<?php echo $idkhach;?>" />-->
+	<!--<meta http-equiv="refresh" content="200;url=index1.php?id=<?php echo $idkhach; ?>" />-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -16,18 +16,20 @@
 		}
 	</style>
 </head>
+
 <body>
 	<div class="container">
 		<div class="row justify-content-center">
-			
+
 			<form class="center col-xl-10 col-lg-9 col-md-8 col-sm-8">
 				<div class="alert alert-info center" role="alert">
-                <center> Thao tác đã <strong> Thành công </strong> mời bạn bấm <strong> Quay lại </strong> để về trang chủ </center>
-				</div>	
-				<center><a class="btn btn-danger" href="index1.php"><i class="fas fa-chevron-left"></i> Quay lại trang chủ.</a></center>
+					<center> <strong> Successful </strong> Click <strong> here </strong> go back </center>
+				</div>
+				<center><a class="btn btn-danger" href="manager.php"><i class="fas fa-chevron-left"></i> Back.</a></center>
 			</form>
-			
+
 		</div>
 	</div>
 </body>
+
 </html>

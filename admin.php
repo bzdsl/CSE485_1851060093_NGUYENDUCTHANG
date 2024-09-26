@@ -52,7 +52,7 @@ $id = $_GET['id'];
 
         </div>
     </nav>
-
+    <!-------------------------------- display picture --------------------------->
     <?php require_once "config/config.php"; ?>
     <div class="container display">
         <?php
@@ -70,7 +70,6 @@ $id = $_GET['id'];
                         <input type="hidden" name="delete_id" value="<?php echo $row['id']; ?>">
                         <input type="hidden" name="delete_url" value="<?php echo $row['image_url']; ?>">
                         <input type="hidden" name="delete_title" value="<?php echo $row['title']; ?>">
-                        <!--<center> <button type="submit" name="submit" href="" class="btn btn-sm btn-danger ">Delete</button> </center>-->
                     </form>
 
                 </div>
@@ -78,7 +77,39 @@ $id = $_GET['id'];
         <?php }
         } ?>
     </div>
+    <!--------------------------------- footer ------------------------------>
+    <footer class="bg-black text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+
+        </div>
+        <!--Grid row-->
+
+        <!-- Copyright -->
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
